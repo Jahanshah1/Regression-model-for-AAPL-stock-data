@@ -1,0 +1,9 @@
+SELECT
+  EXTRACT(year FROM date) AS year,
+  AVG(close) AS avg_close
+FROM
+  `ai4f.AAPL10Y`
+GROUP BY
+  year
+ORDER BY
+  year DESC
