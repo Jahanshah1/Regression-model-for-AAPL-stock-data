@@ -1,0 +1,9 @@
+SELECT
+  date,
+  100.0 * close / LAG(close, 1) OVER(ORDER BY date) AS pct_close_change
+FROM
+  `ai4f.AAPL10Y`
+ORDER BY
+  pct_close_change DESC
+LIMIT
+  5
