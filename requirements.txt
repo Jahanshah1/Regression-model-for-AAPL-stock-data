@@ -1,0 +1,1 @@
+# select  cloud-training/ai4f/AAPL10Y.csv from gcs bucket
